@@ -1,0 +1,110 @@
+## Syntax Dokuwiki
+
+Here are some elements of Dokuwiki syntax supported by this current wiki.
+You can see also directly to the Dokuwiki wiki web site: 
+* [https://www.dokuwiki.org/wiki:syntax](https://www.dokuwiki.org/wiki:syntax)
+
+
+## Basic Formatting
+
+You can use usual formatting.
+
+| Style syntax                | Result                |
+| --------------------------- | --------------------- |
+| ``//Italic//``              | *Italic*              |
+| ``**Bold**``                | **Bold**              |
+| ``**//Italic and bold//**`` | ***Italic and bold*** |
+| ``__underlined__``          | __underlined__        |
+| ``~~striked~~``             | ~~striked~~           |
+| ``raw``                     | ``raw``               |
+
+
+## Lists
+
+You can use ordered and unordered lists. Right now, you can only have one level of check sub-list. If you need more, just tell us!
+
+### Unordered list
+
+```
+  * First ordered list item
+  * Second ordered list item
+  * Third ordered list item
+```
+
+* First ordered list item
+* Second ordered list item
+* Third ordered list item
+
+### Ordered list
+
+```
+  - First ordered list item
+    - A sublist
+  - Second ordered list item
+  - Third ordered list item
+```
+
+1. First ordered list item
+  1. A sublist
+1. Second ordered list item
+1. Third ordered list item
+
+
+## Tables
+
+Right now, only basic table is supported.
+
+Just ask if you need more!
+
+```
+^ Parameter   ^ Default ^ Description                     ^
+| nbthread    | 1       | Number of thread for processing |
+| graphvizDot |         | Path of the dot executable      |
+```
+
+
+| Parameter   | Default | Description                     |
+| ----------- | ------- | ------------------------------- |
+| nbthread    | 1       | Number of thread for processing |
+| graphvizDot |         | Path of the dot executable      |
+
+
+## UML diagrams
+
+### Image with source code
+
+You have to use `````plantuml`` and ```````.
+
+```
+```plantuml
+@startuml
+Alice -> Bob : Hello
+@enduml
+```
+```
+
+```plantuml
+@startuml
+Alice -> Bob : Hello
+@enduml
+```
+
+### Display only image
+
+Use standard ``<uml>`` and ``</uml>`` block.
+
+```
+<uml>
+@startuml
+Alice -> Bob : Hello
+@enduml
+</uml>
+```
+
+```plantuml
+@startuml
+Alice -> Bob : Hello
+@enduml
+```
+
+

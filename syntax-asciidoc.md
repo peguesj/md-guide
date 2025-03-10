@@ -1,0 +1,121 @@
+## Basic Formatting
+
+You can use usual formatting.
+
+| Style syntax                | Result                |
+| --------------------------- | --------------------- |
+| ``__Italic__``              | *Italic*              |
+| ``**Bold**``                | **Bold**              |
+| ``**__Italic and bold__**`` | ***Italic and bold*** |
+| ``+++<u>underlined</u>+++`` | __underlined__        |
+| ``~~striked~~``             | ~~striked~~           |
+| ``raw``                     | ``raw``               |
+
+
+## Lists
+
+You can use ordered and unordered lists. Right now, you can only have one level of sub-list. If you need more, just tell us!
+
+### Unordered list
+
+```
+* First ordered list item
+* Second ordered list item
+* Third ordered list item
+```
+
+* First ordered list item
+* Second ordered list item
+* Third ordered list item
+
+### Ordered list
+
+```
+. First ordered list item
+.. A sublist
+. Second ordered list item
+. Third ordered list item
+```
+
+1. First ordered list item
+  1. A sublist
+1. Second ordered list item
+1. Third ordered list item
+
+
+## Tables
+
+Right now, only basic table is supported.
+
+Just ask if you need more!
+
+```
+|===
+| Parameter | Default | Description
+
+| nbthread
+| 1
+| Number of thread for processing
+
+| graphvizDot
+|
+| Path of the dot executable
+
+|===
+```
+
+
+| Parameter   | Default | Description                     |
+| ----------- | ------- | ------------------------------- |
+| nbthread    | 1       | Number of thread for processing |
+| graphvizDot |         | Path of the dot executable      |
+
+
+## UML diagrams
+
+### Image with source code
+
+You have to use `````plantuml`` and ```````.
+
+```
+```plantuml
+@startuml
+Alice -> Bob : Hello
+@enduml
+```
+```
+
+```plantuml
+@startuml
+Alice -> Bob : Hello
+@enduml
+```
+
+### Display only image
+
+Use standard ``[plantuml]`` block:
+
+```
+[plantuml]
+-​---
+@startuml
+Alice -> Bob : Hello
+note right
+Caution: there is an unicode invisible space 
+in the ---- line.
+end note
+@enduml
+-​---
+```
+
+```plantuml
+@startuml
+Alice -> Bob : Hello
+note right
+Caution: there is an unicode invisible space 
+in the ---- line.
+end note
+@enduml
+```
+
+
