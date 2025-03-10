@@ -704,11 +704,6 @@
             .replace(/\s+/g, '-');
     }
 
-    // Add to the existing script section
-    let autoRender = true;
-    let apiCalls = 0;
-    const API_LIMIT = 500;
-
     const plantUmlEncoderGood = (input) => {
     const deflated = pako.deflate(input, { level: 9 });
     return encode64(deflated);
